@@ -1,7 +1,5 @@
-from logging import exception
 from cadastro import *
-from src.relatorios import *
-
+from relatorios import *
 
 def menu():
     while True:

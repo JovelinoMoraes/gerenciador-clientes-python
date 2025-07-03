@@ -32,8 +32,8 @@ def cadastrar_clientes():
 
 # FUNÇÃO QUE SALVA O CLIENTE CADASTRADO EM UM ARQUIVO TXT
 def salvar_em_arquivo(clientes):
+    os.makedirs("../data", exist_ok=True)
     with open("../data/clientes.txt", "a", encoding="utf-8") as file:
-        os.makedirs("data", exist_ok=True)
 
         for cliente in clientes:
             linha = f"{cliente['nome']},{cliente['saldo']}\n"
