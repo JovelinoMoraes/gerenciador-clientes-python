@@ -77,7 +77,7 @@ cd gerenciador-clientes-python/src
 3. Execute o programa:
 
 ```bash
-python main.py
+python3 main.py
 ```
 
 O sistema abrirá um menu no terminal para interação.
