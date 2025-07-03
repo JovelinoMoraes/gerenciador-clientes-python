@@ -71,13 +71,13 @@ git clone https://github.com/JovelinoMoraes/gerenciador-clientes-python.git
 2. Acesse a pasta do projeto:
 
 ```bash
-cd gerenciador-clientes-python/src
+cd gerenciador-clientes-python
 ```
 
 3. Execute o programa:
 
 ```bash
-python3 main.py
+python3 src/main.py
 ```
 
 O sistema abrirá um menu no terminal para interação.
