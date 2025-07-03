@@ -1,8 +1,25 @@
 from os.path import split
+import os
+
+
+def valida_arquivo():
+    caminho_arquivo = "../data/clientes.txt"
+
+    if not os.path.exists(caminho_arquivo):
+        print("⚠️ Lista de clientes não encontrada.")
+        return False
+
+    if os.path.getsize(caminho_arquivo) == 0:
+        print("⚠️ Nenhum cliente cadastrado ainda.")
+        return False
+
+    return True
 
 
 # FUNÇÃO QUE MOSTRA TODOS OS CLIENTES CADASTRADOS
 def mostrar_todos_clientes():
+    if not valida_arquivo():
+        return
     with open("../data/clientes.txt", "r", encoding="utf-8") as file:
         linhas = file.readlines()
         print(" ---- Lista de Clientes ----")
@@ -18,6 +35,8 @@ def mostrar_todos_clientes():
 
 # FUNÇÃO QUE MOSTRA APENAS OS CLIENTES COM SALDO NEGATIVO
 def mostrar_clientes_negativos():
+    if not valida_arquivo():
+        return
     with open("../data/clientes.txt", "r", encoding="utf-8") as file:
         linhas = file.readlines()
         print(" ---- Lista de Clientes Negativados ----")
