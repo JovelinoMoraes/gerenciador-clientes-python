@@ -65,7 +65,7 @@ Além disso, foi construído passo a passo, com testes, validação e tratamento
 1. Clone o repositório:
 
 ```bash
-git clone https://github.com/seu-usuario/gerenciador-clientes-python.git
+git clone https://github.com/JovelinoMoraes/gerenciador-clientes-python.git
 ```
 
 2. Acesse a pasta do projeto:
