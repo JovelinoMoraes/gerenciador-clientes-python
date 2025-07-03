@@ -50,6 +50,8 @@ def mostrar_clientes_negativos():
 
 #  FUNÇÃO QUE MOSTRA O CLIENTE COM MAIOR SALDO
 def mostrar_cliente_maior_saldo():
+    if not valida_arquivo():
+        return
     with open("../data/clientes.txt", "r", encoding="utf-8") as file:
         linhas = file.readlines()
         print(" ---- Cliente com o maior saldo  ----")
